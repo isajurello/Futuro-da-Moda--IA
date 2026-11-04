@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Uma experiência interativa sobre inteligência artificial e o futuro da moda."
+    >
+
+    <title>Futuro da Moda | Uma experiência com IA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="#" aria-label="Futuro da Moda">
+            <span class="logo-simbolo" aria-hidden="true">✳</span>
+            <span>futuro da moda</span>
+        </a>
+
+        <span class="cabecalho-legenda">Criatividade com tecnologia</span>
+    </header>
+
+    <main class="container">
+
+        <!-- Tela de apresentação -->
+        <section class="tela-inicial" aria-labelledby="titulo-principal">
+            <div class="etiqueta">
+                <span class="ponto-verde"></span>
+                UMA NOVA ERA PARA A MODA
+            </div>
+
+            <div class="ilustracao-inicial" aria-hidden="true">
+                <span class="orbita orbita-um"></span>
+                <span class="orbita orbita-dois"></span>
+                <span class="simbolo-ia">IA</span>
+                <span class="estrela estrela-um">✳</span>
+                <span class="estrela estrela-dois">✦</span>
+            </div>
+
+            <h1 id="titulo-principal">
+                E se a inteligência artificial pudesse
+                <span>transformar o mundo da moda?</span>
+            </h1>
+
+            <p class="introducao">
+                A moda está sempre evoluindo. Faça suas escolhas,
+                descubra como a inteligência artificial está revolucionando
+                a indústria fashion e veja como a tecnologia pode transformar
+                a maneira como criamos, vestimos e consumimos.
+            </p>
+
+            <button class="iniciar-btn" type="button">
+                Começar minha experiência
+                <span aria-hidden="true">→</span>
+            </button>
+
+            <p class="nota-inicial">
+                Uma experiência interativa sobre IA e o universo fashion
+            </p>
+        </section>
+
+        <!-- Tela das perguntas -->
+        <section
+            class="tela-jogo"
+            aria-live="polite"
+            aria-label="Pergunta da experiência"
+            hidden
+        >
+            <div class="progresso">
+                <span class="progresso-texto">SUA EXPERIÊNCIA</span>
+                <span class="progresso-numero">Pergunta 1 de 6</span>
+            </div>
+
+            <div
+                class="barra-progresso"
+                role="progressbar"
+                aria-label="Progresso da experiência"
+                aria-valuemin="0"
+                aria-valuemax="6"
+                aria-valuenow="1"
+            >
+                <div class="barra-progresso-preenchimento"></div>
+            </div>
+
+            <div class="cartao-pergunta">
+                <span class="pergunta-categoria">EXPLORE O UNIVERSO FASHION</span>
+
+                <h2 class="pergunta-enunciado"></h2>
+
+                <div class="opcoes"></div>
+            </div>
+
+            <p class="dica-jogo">
+                Suas escolhas ajudam a imaginar o futuro da moda.
+            </p>
+        </section>
+
+        <!-- Tela de resultado -->
+        <section class="caixa-resultado" aria-live="polite" hidden>
+            <div class="ilustracao-resultado" aria-hidden="true">
+                <span class="orbita orbita-um"></span>
+                <span class="orbita orbita-dois"></span>
+                <span class="simbolo-ia">IA</span>
+                <span class="folha-resultado">✳</span>
+            </div>
+
+            <span class="resultado-etiqueta">FIM DA EXPERIÊNCIA</span>
+
+            <h2>O futuro da moda também está nas suas escolhas.</h2>
+
+            <p class="mensagem-resultado">
+                Você concluiu sua experiência! Suas decisões mostram
+                como a inteligência artificial pode transformar o universo
+                fashion, estimular a criatividade e contribuir para uma
+                indústria da moda mais inovadora e consciente.
+            </p>
+
+            <div class="resumo-resultado">
+                <span class="icone-resumo" aria-hidden="true">✦</span>
+
+                <div>
+                    <h3>Para levar com você</h3>
+                    <p>
+                        A inteligência artificial pode ajudar a criar roupas,
+                        identificar tendências e personalizar experiências.
+                        Porém, a criatividade humana e o consumo consciente
+                        continuam sendo essenciais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="historia-final">
+                <h3>O caminho que você construiu</h3>
+                <p class="texto-resultado"></p>
+            </div>
+
+            <button class="novamente-btn" type="button">
+                <span aria-hidden="true">↻</span>
+                Explorar novamente
+            </button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <span>Criatividade, inovação e um novo olhar para a moda</span>
+        <span aria-hidden="true">♡</span>
+    </footer>
+</body>
+</html>
